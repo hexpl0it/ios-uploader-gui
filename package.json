@@ -1,0 +1,38 @@
+{
+  "name": "ios-uploader-gui",
+  "version": "1.0.0",
+  "description": "GUI for ios-uploader",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/hecpl0it/ios-uploader-gui",
+  "keywords": [
+    "ios",
+    "uploader",
+    "ipa",
+    "gui",
+    "app"
+  ],
+  "author": "hexpl0it",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^11.2.0",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "electron-json-storage": "^4.3.0",
+    "ios-uploader": "^1.2.1",
+    "milligram": "^1.4.1",
+    "progressbar.js": "^1.1.0",
+    "sweetalert2": "^10.13.0"
+  },
+  "build": {
+    "appId": "hexpl0it.ios-uploader-gui",
+    "mac": {
+      "category": "hexpl0it.app.ios-uploader-gui"
+    }
+  }
+}

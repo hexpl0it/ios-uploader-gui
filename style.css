@@ -1,0 +1,53 @@
+.close-btn {
+  width: fit-content;
+  right: 0;
+  top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: darkgray;
+  float: right;
+}
+.close-btn:hover {
+  cursor: pointer;
+  background-color: darkslategray;
+}
+
+.titlebar {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+  background-color: lightgray;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.titlebar .close-btn {
+  -webkit-app-region: none;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  padding-top: 10px;
+}
+
+.sfoglia-column {
+    text-align: center;
+}
+
+#progress {
+    margin: 20px;
+    width: 100%;
+    height: 8px;
+    position: relative;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.row.log {
+    margin-top: 40px;
+}

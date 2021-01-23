@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/milligram/dist/milligram.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <input type="file" id="fileInput" accept=".ipa" />
+    <div class="titlebar">
+      <span>IOS UPLOADER</span>
+      <div id="btnClose" class="close-btn">&times;</div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <label for="username">Username</label>
+          <input type="text" id="username" />
+        </div>
+        <div class="column">
+          <label for="password">App password</label>
+          <input type="text" id="password" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column sfoglia-column">
+          <button type="button" id="btnSfoglia">SELEZIONA FILE</button>
+        </div>
+      </div>
+      <div class="row">
+        <div id="progress"></div>
+      </div>
+      <div class="row log">
+        <span id="log">Pronto per il caricamento</span>
+      </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
