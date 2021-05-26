@@ -19,7 +19,7 @@
   "author": "hexpl0it",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^11.2.0",
+    "electron": "^13.0.1",
     "electron-builder": "^22.9.1"
   },
   "dependencies": {
